@@ -1,0 +1,7 @@
+# Python packages (system tools: apt install minimap2 samtools bcftools tabix — or conda: environment.yml)
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+biopython>=1.83

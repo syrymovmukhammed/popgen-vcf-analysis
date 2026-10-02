@@ -1,0 +1,16 @@
+accession	strain	expected_phylogroup	note
+NC_000913	K-12_MG1655	A	lab strain (also the reference)
+NC_010473	K-12_DH10B	A	cloning strain
+NC_012967	B_REL606	A	Lenski LTEE ancestor
+NC_011741	IAI1	B1	commensal
+NC_011748	55989	B1	enteroaggregative
+NC_011415	SE11	B1	commensal
+NC_004431	CFT073	B2	uropathogenic (UPEC)
+NC_007946	UTI89	B2	uropathogenic (UPEC)
+NC_008253	536	B2	uropathogenic (UPEC)
+NC_011742	S88	B2	neonatal meningitis
+NC_011745	ED1a	B2	commensal
+NC_011751	UMN026	D	uropathogenic
+NC_011750	IAI39	F	uropathogenic (formerly group D)
+NC_002695	O157:H7_Sakai	E	EHEC
+NC_002655	O157:H7_EDL933	E	EHEC

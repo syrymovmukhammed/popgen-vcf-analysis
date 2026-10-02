@@ -1,0 +1,16 @@
+# conda / mamba alternative to apt:
+#   mamba env create -f environment.yml && conda activate popgen-vcf
+name: popgen-vcf
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - pandas>=2.1
+  - scipy>=1.11
+  - scikit-learn>=1.4
+  - matplotlib>=3.8
+  - biopython>=1.83
+  - minimap2=2.28
+  - samtools=1.21
+  - bcftools=1.21
+  - curl
