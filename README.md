@@ -3,12 +3,17 @@
 [![CI](https://github.com/syrymovmukhammed/popgen-vcf-analysis/actions/workflows/main.yml/badge.svg)](https://github.com/syrymovmukhammed/popgen-vcf-analysis/actions/workflows/main.yml)
 ![minimap2](https://img.shields.io/badge/minimap2-asm20-blue.svg)
 ![python](https://img.shields.io/badge/python-3.12-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-green.svg)
 
 From a set of bacterial genomes to population structure:
 **genome → reference alignment → multi-sample SNP VCF → core-SNP filter →
 SNP-distance matrix → PCA, clustering and a neighbour-joining tree.**
 The same code runs on a simulated population with a known answer (CI) or on
 15 real *E. coli* genomes spanning the main phylogroups.
+
+![PCA and UPGMA](showcase/pca_clusters.png)
+
+*Simulated population, 24 strains, 4,771 core SNPs. Left: PCA coloured by the cluster the pipeline found, labelled with the clade the strain was simulated in. Right: UPGMA dendrogram. Four clusters, ARI = 1.0 against the true clades. More in [showcase/](showcase/).*
 
 ## Two modes
 
@@ -95,6 +100,7 @@ popgen-vcf-analysis/
 │   ├── wgs_sim.py                # FASTA helpers + synthetic fallback reference
 │   └── make_report.py
 ├── tests/check_outputs.sh
+├── showcase/                     # curated figures, kept in git
 └── requirements.txt / environment.yml
 ```
 
@@ -105,3 +111,7 @@ Part of a three-repository set on bacterial WGS:
 - [wgs-variant-pipeline](https://github.com/syrymovmukhammed/wgs-variant-pipeline) — reads → BAM → VCF, bcftools + GATK, benchmarked against a truth set
 - [variant-ml-filter](https://github.com/syrymovmukhammed/variant-ml-filter) — Random Forest / Logistic Regression filter for false-positive calls
 - [popgen-vcf-analysis](https://github.com/syrymovmukhammed/popgen-vcf-analysis) — multi-sample VCF → SNP distances, PCA, clustering, NJ tree
+
+## License
+
+MIT — see [LICENSE](LICENSE).
